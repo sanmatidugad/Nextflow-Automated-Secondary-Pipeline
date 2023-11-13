@@ -74,7 +74,7 @@ process SECONDARY_ANALYSIS {
 workflow {
 
 SUBSAMPLE("${params.outdir}v2_subsample.R", "${params.outdir}${params.input}")
-NORMALIZATION("${params.outdir}normalizer_09292023.js", SUBSAMPLE.out[4], "${params.outdir}node_modules/")
+NORMALIZATION("${params.outdir}normalizer.js", SUBSAMPLE.out[4], "${params.outdir}node_modules/")
 SECONDARY_ANALYSIS("${params.outdir}secondary_analysis.R", NORMALIZATION.out[0], "${params.outdir}ID_SYMBOL.csv")
 }
 
