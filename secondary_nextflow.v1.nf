@@ -1,11 +1,13 @@
 #!/usr/bin/env/nextflow
 
+
 params.input = ""
 params.normal_count = ""
 params.target = ""
 params.project = ""
 
-params.outdir = "/home/data/Nextflow_Secondary_Pipeline/"
+
+params.outdir = "/mnt/"
 date = new java.util.Date()
 
 
